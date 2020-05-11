@@ -1,0 +1,66 @@
+/*Awards*/
+
+.awardWrapper{
+    height: 408px;
+    background: url('../img/backgrounds/bg_awards.png');
+}
+
+.awardCards{    
+    @include wrapper();
+    min-height: 108px;
+    @include flexibleSpaceBetween();
+    padding-top: 161px;
+}
+
+.awardCard{
+    @include flexibleRow();
+    height: 108px;
+}
+
+.awardCard div img{
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+}
+
+.awardDesc{
+    @include flexibleCol();
+}
+
+.awardHeader{
+    font-style: normal;
+    letter-spacing: 0.01em;
+    color: $black;
+}
+
+.awardTxt{
+    @include Font15();
+    color: $black;
+}
+
+.awardWinnningTxt{
+    width: 180px;
+}
+
+.awardHygieneTxt{
+    width: 200px;
+}
+
+.awardDigitalTxt{
+    width: 226px;
+}
+
+.awardLearnMoreWrapper{
+    @include flexibleRow();
+}
+
+.awardLearnMore{
+    @include flexibleRow();
+    @include Font15();
+    color: $red;
+    margin-right: 7.27px;
+}
+
+.awardPlus{
+    margin-top: 2px;
+}

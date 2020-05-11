@@ -1,0 +1,55 @@
+/*Generic*/
+
+body{
+    width: 100%;
+    background-color: $black;
+}   
+
+h1, h2, h3 {
+    text-transform: uppercase;
+    font-family: $Playfair;
+}
+
+h2{
+    font-weight: 900;
+    font-size: 61px;
+    line-height: 81px;
+    color: $semiGray;
+}
+
+h3{
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+ul li a {
+    font-size: 15px;
+    color: $semiWhite;
+    font-family: $Raleway;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    &:hover{
+        color: $red;
+    }
+}
+
+.plus{
+    width: 11.45px;
+    height: 11.45px;
+    border: 1px solid $red;
+}
+
+.plus div{
+    width: 6px;
+    height: 6px;
+    font-size: 10px;
+    font-weight: 700;
+    padding-left: 2.725px;
+    color: $red;
+}
+
+main{
+    width:100%;
+}

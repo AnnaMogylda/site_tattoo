@@ -1,0 +1,81 @@
+/* Featured works*/
+
+
+.featuredWorks{
+    @include wrapper();
+    min-height: 455px;
+    padding-top: 80px;
+    padding-bottom: 130px;
+}
+
+.sectionWorksHeader{
+    @include flexibleSpaceBetween();
+    margin-bottom: 21px;
+}
+
+.sectionWorksHeader{
+    div{
+        @include flexibleRow(); 
+        .featuredWorkReadMore{
+            @include Font15();
+            color: $semiWhite;
+            padding-top: 56px;
+            margin-right: 10.27px;
+        }
+        .featuredWorkPlus{
+            margin-top: 58px;
+            padding-top: 1px;
+        }
+    }
+}
+
+.worksHeader{
+    font-style: normal;
+    min-height: 81px;
+    padding-bottom: 3px;
+}
+
+.workExamples{
+    display: grid;
+    grid-template-columns: repeat(4, 261px) ;
+    grid-template-rows: 80px 330px;
+    grid-column-gap:30px;
+}
+
+.workExamples{
+    .workExamplesHeader{
+        grid-row: 1/2;
+        grid-column: 1/3;
+        font-style: normal;
+        line-height: 32px;
+        letter-spacing: 0.01em;
+        color: $semiWhite;
+        padding-top: 3px;
+        padding-bottom: 45px;
+    }
+    a{
+        img{
+            width: 261px;
+        }
+    }
+}
+
+.spiderTattoo{
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+.butterflyTattoo{
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.skeletonTattoo{
+    grid-row: 1/2;
+    grid-column: 3/4;
+}
+
+.knifeTattoo{
+    grid-row: 1/2;
+    grid-column: 4/5;
+}

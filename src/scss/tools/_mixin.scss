@@ -1,0 +1,66 @@
+
+/* Mixin*/
+
+@mixin wrapper() {
+    width: 1134px;
+    margin: 0 auto;
+}
+
+@mixin wrapper992() {
+    width: 992px;
+    margin: 0 auto;
+}
+
+
+@mixin flexibleRow() {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+@mixin flexibleCol() {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+}
+
+@mixin flexibleCenter() {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@mixin flexibleSpaceBetween() {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@mixin Font15 {
+    font-size: 15px;
+    line-height: 18px;
+    font-family: $Raleway;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0.01em;
+}
+
+@mixin nav(){  
+    height: inherit;
+    ul{
+        height: inherit;
+        @include flexibleSpaceBetween();
+        width: inherit;
+        border-bottom: 1px solid $semiGray;
+        padding-left: 0;
+        li {
+            a{
+                height: inherit;
+            }
+            .contact{
+                color: $red;
+                font-weight: 400;
+            }
+        }
+    }
+}

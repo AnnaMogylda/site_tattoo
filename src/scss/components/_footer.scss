@@ -1,0 +1,46 @@
+/*Footer*/
+
+footer{
+    @include wrapper();
+}
+
+.footerMenu{
+    @include nav();
+}
+
+.footerMenu{
+    ul{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-top: 1px solid $semiGray;
+    }
+}
+
+.footerContact{
+    font-family: $Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.01em;
+    color: $semiGray;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @include flexibleSpaceBetween()
+}
+
+.socialMediaFooter{
+    @include flexibleSpaceBetween()
+}
+.socialMediaFooter{
+    img{
+        width: 14.06px;
+        height: 14.06px;
+        padding-top: 20px - 17.47px;
+    }
+}
+
+.footer_fb{
+    margin-right: 29.94px;
+}
+

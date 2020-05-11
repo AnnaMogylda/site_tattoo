@@ -1,0 +1,58 @@
+/* about us */
+
+.sectionAboutUs{
+    width: 100%;
+    height: 456px;
+    display: flex;
+    justify-content: end;
+}
+
+.bg3_layer1{
+    position: absolute;
+    width: 100%;
+    height: 430px;
+    margin-top: 13px;
+    background: url('../img/backgrounds/bg_aboutUs.png');
+}
+
+.bg3_layer2{
+    position: absolute;
+    width: 100%;
+    height: 456px;
+    @include flexibleRow();
+    justify-content: center;
+}
+
+.aboutUsWrapper{
+    width: 1134px;
+    height: 456px;
+    padding-left: 153px;
+    @include flexibleSpaceBetween();
+}
+
+.aboutUs{
+    @include flexibleCol();
+    width: 440px;
+    height: 430px;
+    margin-right: 40px;
+    margin-top: 13px;
+    .aboutUsHeader{
+        font-style: normal;
+        padding-top: 80px;
+        padding-bottom: 20px;
+    }
+    .aboutUsDesc{
+        @include Font15();
+        color: $black;
+        .aboutUsDesc1{
+            padding-bottom: 18px;
+        }
+    }
+}
+
+
+.aboutUsImg, .aboutUsImg img{
+    width: 649px;
+    height: 456px;
+}
+

@@ -1,0 +1,141 @@
+/*Hero*/
+
+.hero{
+    height:670px;
+    width: 100%;
+}
+
+.hero_layer{
+    width: inherit;
+    height:inherit;
+    position: absolute;
+}
+
+.hero_layer1{
+    background: url('../img/backgrounds/bg_hero.png') 100% 100% / contain;
+}
+
+.hero_layer2 {
+    background: linear-gradient($linear0 0%, $linear100 100% );
+}
+
+.hero_layer3{
+    background: $black;
+    opacity: 0.6;
+}
+
+
+/*logo*/
+
+.heroExpertise{
+    position: relative;
+    @include wrapper();
+    @include flexibleSpaceBetween();
+}
+
+.expertiseLogoImg{
+    position: relative;
+    width: 120px;
+    height: 95.33px;
+    padding-top: 10px;
+    left: -11px;
+}
+
+.expertiseLogoTxt{
+    font-family: $Raleway;
+    position: absolute;
+    top: 49px + 10px;
+    left: 37px - 11px;
+    width: 47px;
+    height: 24px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 7px;
+    line-height: 8px;
+    text-align: center;
+    color:$green;
+}
+
+.dreamMastersLogo{
+    padding-top: 58px;
+    width: 445px;
+}
+
+.dreamMastersLogoImg{
+    width: inherit;
+    height: 313px;
+}
+
+.dreamMastersLogoTxt{
+    font-family: $Playfair;
+    text-align: center;
+    height: 24px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color:$white;
+}
+
+.dreamMasterBtn{
+    @include flexibleRow();
+    margin:0 auto;
+    margin-top: 58px;
+    padding: 0;
+    width: 180px;
+    height: 48px;
+    font-family: $Raleway;
+    border: 2px solid $btnWhite;
+    box-sizing: border-box;
+    background-color: transparent;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    position: relative;
+    .contactUsBtnTxt{
+        position: absolute;
+        color: $btnWhite;
+        width: 106px;
+        height: 19px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;       
+        padding: 15px 12px 14px 24px;
+    }
+    .contactUsBtnPlus{
+        position: absolute;
+        color: $btnWhite;
+        width: 19px;
+        height: 19px;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 34px;
+        line-height: 40px;
+        padding-top: 5px;
+        padding-left: 102px + 12px + 24px;
+    }
+    &:hover{
+        border: 2px solid $red;
+    }
+    &:hover .contactUsBtnTxt{
+        color: $red;
+
+    }
+    &:hover .contactUsBtnPlus{
+        color: $red;
+    }
+}
+
+.socialMedia{
+    @include flexibleCol();
+    padding-top: 20.75px;
+    img{
+        width: 22.5px;
+        height: 22.5px;
+    }
+}
+
+.hero_fb{
+    margin-bottom: 21.5px;
+}

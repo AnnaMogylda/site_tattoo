@@ -1,0 +1,190 @@
+
+/*Contact us */
+
+.sectionContactForm{
+    @include wrapper();
+    height: 538px;
+}
+
+.wrapperContactForm{
+    width: 540px;
+    height: 458px;
+    margin: 0 auto;
+}
+
+.contactHeaderForm{
+    font-style: normal;
+    letter-spacing: 0.01em;
+    text-align:center;
+    color: $semiWhite;
+    padding-bottom: 22px;
+}
+
+form {
+    div{
+        margin-bottom: 27px;
+    }
+}
+
+label{
+    @include Font15();
+    color: $semiWhite;
+    height: 18px;
+}
+
+input, select, textarea{
+    border: none;
+    border-bottom: 1px solid $semiGray;
+    width: 540px;
+    background-color: $black;
+    padding-bottom: 9px;
+    padding-top: 9px;
+    padding-left: 17px;
+}
+
+input, textarea{
+    color: $semiWhite;
+}
+
+input::placeholder{
+    @include Font15();
+    color: $placeholderColor;
+}
+
+.selectWrapper{
+    position: relative;
+}
+
+.selectWrapper:after {
+    content: url("../img/icons/arrow_bottom.png");
+    display: block;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    z-index: 1;
+    margin-top: -3px;
+    width: 34px;
+    height: 34px;
+}
+
+select{
+    @include Font15();
+    -webkit-appearance: none;/* Chrome */
+    -moz-appearance: none;/* Firefox */
+    appearance: none;
+    height: 34px;
+}
+
+
+
+select{
+    &:placeholder{
+        font-size: 15px;
+        color:  $placeholderColor;
+    }
+    option{
+        &:selected{
+            color: $semiWhite;
+        }
+    }
+}
+
+select{
+    color: $placeholderColor;
+}
+
+option{
+    color: $semiWhite;
+}
+
+
+
+textarea{
+    height: 66px;
+}
+
+textarea::placeholder{
+    @include Font15();
+    color: $placeholderColor;
+}
+
+.uploadBtns{
+    margin-top: 33px - 27px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.uploadBtn{
+    @include Font15();
+    @include flexibleRow();
+    padding: 0;
+    background-color: $black;
+    border: none;
+    font-weight: 200;
+    color: $semiWhite;
+    span{
+        margin-right: 5px;
+    }
+    img{
+        width: 5.45px;
+        height: 13.69px;
+        margin-top: 2px;
+    }
+}
+
+
+.contactFormBtn{
+    margin:0 auto;
+    padding: 0;
+    @include flexibleRow();
+    width: 180px;
+    height: 48px;
+    border: 2px solid $btnWhite;
+    box-sizing: border-box;
+    background-color: transparent;
+    position: relative;
+    .contactUsFormBtnTxt{
+        position: absolute;
+        font-family: $Raleway;
+        margin: 0;
+        text-transform: uppercase;
+        width: 106px;
+        height: 19px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        color: $btnWhite;
+        padding: 15px 12px 14px 24px;
+    }
+    .contactUsFormBtnPlus{
+        position: absolute;
+        font-family: $Raleway;
+        padding-top: 4px;
+        width: 19px;
+        height: 19px;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 34px;
+        line-height: 40px;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        color: $btnWhite;
+        padding-top: 5px;
+        padding-left: 102px + 12px + 24px;
+    }
+    &:hover{
+        border: 2px solid $red;
+    }
+    &:hover .contactUsFormBtnTxt{
+        color: $red;
+    }
+    &:hover .contactUsFormBtnPlus{
+        color: $red;
+    }
+}
+

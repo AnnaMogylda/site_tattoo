@@ -1,0 +1,47 @@
+/* Contact Info */
+
+.wrapperContactInfo{
+    @include wrapper();
+    height:317px;
+    background-color:$lightGray;
+    margin-bottom: 80px;
+    @include flexibleSpaceBetween();
+}
+
+.contactInfoElems{
+    padding-left: 96px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.contactInfoElem{
+    margin-bottom: 10px;
+}
+
+.contactInfoHeader{
+    font-family: $Playfair;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 19px;
+    color:$black;
+    text-transform: uppercase;
+}
+
+.contactInfoElem{
+    div {
+        p{
+            @include Font15();
+            color:$black;
+        }
+    }
+}
+
+.sociaMediaContactInfo{
+    @include flexibleRow();
+    margin-top: 5px;
+}
+
+.about_fb{
+    margin-right: 27px;
+}
